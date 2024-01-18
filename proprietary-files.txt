@@ -1613,6 +1613,14 @@ odm/etc/sensor/config/waipio_qrd_ois_system.json
 odm/etc/sensor/config/waipio_qrd_oplus_smart_prox.json
 odm/etc/sensor/sensor_config.json
 
+# Touch
+odm/bin/touchDaemon
+odm/bin/hw/vendor-oplus-hardware-touch-V1-service
+odm/lib64/vendor.oplus.hardware.touch@1.0.so
+odm/etc/vintf/manifest/manifest_touch_aidl.xml
+odm/etc/init/init.touchDaemon.rc
+odm/etc/init/vendor-oplus-hardware-touch-V1-service.rc
+
 # VPU firmware
 vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v_unsigned.mbn
