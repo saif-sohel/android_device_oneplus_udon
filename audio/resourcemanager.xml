@@ -99,6 +99,8 @@
         <!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2022/04/12, add for lvvefq err feedback -->
         <param key="oplus_lvve_err_fb" value="true"/>
         <param key="record_zoom_support" value="true"/>
+        <!-- zhangrun@MULTIMEDIA.AUDIODRIVER, 2023/02/22, add for support call record in ocar mode -->
+        <param key="ocar_mode_support" value="true"/>
     </config_params>
     <config_volume>
         <use_volume_set_param>1</use_volume_set_param>
