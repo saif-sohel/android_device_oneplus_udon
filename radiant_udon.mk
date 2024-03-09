@@ -16,8 +16,8 @@ $(call inherit-product, vendor/radiant/config/common_full_phone.mk)
 
 PRODUCT_NAME := radiant_udon
 PRODUCT_DEVICE := udon
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_BRAND := OnePlus
+PRODUCT_MANUFACTURER := oplus
+PRODUCT_BRAND := oplus
 PRODUCT_MODEL := CPH2487
 
 PRODUCT_SYSTEM_NAME := CPH2487
