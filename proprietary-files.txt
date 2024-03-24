@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 11R (CPH2487_14.0.0.200(EX01)).
+## are from OnePlus 11R (CPH2487_14.0.0.501(EX01)).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -1430,32 +1430,32 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|3731e151393
 -odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml|66a7dddeabfde485c90989c8b3fc2fda7e8660a0
 
 # Camera firmware
-vendor/firmware/CAMERA_ICP.b00
-vendor/firmware/CAMERA_ICP.b01
-vendor/firmware/CAMERA_ICP.b02
-vendor/firmware/CAMERA_ICP.b03
-vendor/firmware/CAMERA_ICP.b04
-vendor/firmware/CAMERA_ICP.b05
-vendor/firmware/CAMERA_ICP.b06
-vendor/firmware/CAMERA_ICP.b07
-vendor/firmware/CAMERA_ICP.b08
-vendor/firmware/CAMERA_ICP.b09
-vendor/firmware/CAMERA_ICP.b10
-vendor/firmware/CAMERA_ICP.b11
-vendor/firmware/CAMERA_ICP.b12
-vendor/firmware/CAMERA_ICP.b13
-vendor/firmware/CAMERA_ICP.b14
-vendor/firmware/CAMERA_ICP.b15
-vendor/firmware/CAMERA_ICP.b16
-vendor/firmware/CAMERA_ICP.b17
-vendor/firmware/CAMERA_ICP.b18
-vendor/firmware/CAMERA_ICP.b19
-vendor/firmware/CAMERA_ICP.b20
-vendor/firmware/CAMERA_ICP.elf
-vendor/firmware/CAMERA_ICP.mbn
-vendor/firmware/CAMERA_ICP.mdt
-vendor/firmware/CAMERA_ICP_170.elf
-vendor/firmware/CAMERA_ICP_480.elf
+vendor/firmware/CAMERA_ICP.b00|82b382d1cafe3979087cb14f8e9c71e2850b04e2
+vendor/firmware/CAMERA_ICP.b01|98fd1c3eae5a8df4aee4acf216d40d11e08d94b3
+vendor/firmware/CAMERA_ICP.b02|49cb748466814e7f2c3a9c4ae559f9d5ca9634ea
+vendor/firmware/CAMERA_ICP.b03|5f0babecc2c92951ab8363c1e1ce2c6c2480bb6b
+vendor/firmware/CAMERA_ICP.b04|f726e7fa233485e02ef6172833d51353627aa81d
+vendor/firmware/CAMERA_ICP.b05|e19854e03b52cc67d7db620f54609b66d1b85f54
+vendor/firmware/CAMERA_ICP.b06|0b403b94f400e8f76ac5f5f18f6957318ec2a582
+vendor/firmware/CAMERA_ICP.b07|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/CAMERA_ICP.b08|d08ced788b67720fcfbda3cd5e5f76831faf315a
+vendor/firmware/CAMERA_ICP.b09|2427c511b771834d031b0a91d96ee427c49a2116
+vendor/firmware/CAMERA_ICP.b10|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b12|a0adf6b17098902db42960a6bc836c231d6ee18b
+vendor/firmware/CAMERA_ICP.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b17|9b65bc7d24c9e893cadcba580489bdfdb256baa8
+vendor/firmware/CAMERA_ICP.b18|4aeeff383c273c2a75c861e473adf25b38a2b919
+vendor/firmware/CAMERA_ICP.b19|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/CAMERA_ICP.b20|7e32f95464d2288e958195f5c3919249388511c0
+vendor/firmware/CAMERA_ICP.elf|ba32df583439d984091a202794f398bacd0a2da3
+vendor/firmware/CAMERA_ICP.mbn|6f8d69798ccf39a5b711a187ded931f12c69f6c8
+vendor/firmware/CAMERA_ICP.mdt|115e7df38f3d4ba2afa71376f73aa13c2838063c
+vendor/firmware/CAMERA_ICP_170.elf|9f3f13528b9775a6c21d36214097214e2217c369
+vendor/firmware/CAMERA_ICP_480.elf|295c4ea4942773a4ffff08c069792b05b73d03f3
 
 # CVP firmware
 vendor/firmware/evass-lt-21.b00
