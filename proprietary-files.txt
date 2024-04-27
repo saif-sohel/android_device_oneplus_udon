@@ -979,9 +979,6 @@ odm/lib64/camera/com.qti.tuned.sunny_s5k3p9.bin|53fbe66338f3244b6703a5f740326a75
 odm/lib64/camera/components/com.oplus.node.eispreview.so|56df706d6091db8881acc2177deb1d0ed47a695c
 odm/lib64/camera/components/com.oplus.node.pilot.so|754c0e2c3618537aaeb0579fc667e7a6013cee06
 odm/lib64/camera/components/com.oplus.node.preview.so|ecd7859945af75bc61219486b81d0959321e2a2f
-odm/lib64/camera/components/com.oplus.node.sstabdefer.so|e5dac67c120df51c35a2d34e6baa3a7211a5f669
-odm/lib64/camera/components/com.oplus.node.sstabgme.so|2d4f8446335028e2a91abad6056fe95e20d3c451
-odm/lib64/camera/components/com.oplus.node.sstabrealt.so|3d27bbfe618b72dd04df07b2394e8f37c725770e
 odm/lib64/camera/components/com.oplus.node.vacuity.so|b405fb54e469d8e1ff8086bd767f70b363d3e941
 odm/lib64/camera/components/com.oplus.node.videoenhance.so|44dd9151de08021a5c4539b61d9501bc86e84dcc
 odm/lib64/camera/components/com.oplus.stats.aec.so|636eed267fdfa2a58ed9f916a2c26aaa93cd081e
@@ -1003,8 +1000,6 @@ odm/lib64/camera/libafCustomParam_Cam3.bin|d42c926d2763e93234b44f24209c5ef28d1a3
 odm/lib64/camera/libafCustomParam_SecCam0.bin|29fc2efbfdff3ba89e8e3c32a26369c81b43789e
 odm/lib64/camera/revision.txt|b0f30886cc4d99e16a9edc99ab2d955df3a2425d
 odm/lib64/libAF.so|d0274fc7dc3607afe7c06f6a74e74f16a232ac64
-odm/lib64/libAlgoInterface.so|2808a84d77d8bb103f4e8924460d9d160ccfeff5
-odm/lib64/libAlgoProcess.so|8bd22ac505eb9a0800a34c5be6ad65aaab13af0a
 odm/lib64/libAncFilter.so|3d227c96ed1fba725b3da5f377be8f067421cf7c
 odm/lib64/libAncHumBokeh.so|290ca519b7106de22473d8704c0b95d1d1082a09
 odm/lib64/libAncHumBokehPost.so|2465a9f1e581f5620a303da3ce0909e54f9d226f
@@ -1031,7 +1026,6 @@ odm/lib64/libCipParameter5.so|c558658e8b7ad1f24d7b6959348db5e22daaa9f5
 odm/lib64/libCipParameter6.so|e69a0e50a83f07edf951d590b2f723f2df83975b
 odm/lib64/libCipo_awb.so|fb156025f9fd09556b9994f65ccda6d75c159499
 odm/lib64/libDeVIS.so|79885f78c1e15dfe63773cad20020e0f19b13614
-odm/lib64/libEIS.so|095f6abb9bb1768d540c83d10cbc1a1ccd5d3e96
 odm/lib64/libFaceBeautyCap.so|5eeb2f261f88e039b41c18ec0e80d8a94527855c
 odm/lib64/libFaceBeautyJni.so|bbef9f7eded1f03b9e253b486c7054aba76ab942
 odm/lib64/libFaceBeautyPICap.so|c07e85ea24aa0859b3821afd735afc10c472b412
@@ -1428,6 +1422,20 @@ vendor/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so|00a54f35249d4810
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|3731e1513935156d6488bf0ec9cab0085ee5279d
 -odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml|26cae610d96fcb2dea171de21172f79e1b1f85f3
 -odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml|66a7dddeabfde485c90989c8b3fc2fda7e8660a0
+
+# OOS cam (dirty hacks)
+odm/lib64/libEIS.so
+odm/lib64/libui.so:odm/lib64/libui-oos.so
+odm/lib64/android.hardware.graphics.allocator@2.0.so
+odm/lib64/android.hardware.graphics.allocator@3.0.so
+odm/lib64/android.hardware.graphics.allocator@4.0.so
+odm/lib64/libAlgoInterface.so
+odm/lib64/libAlgoProcess.so
+odm/lib64/camera/components/com.oplus.node.sstabdefer.so
+odm/lib64/camera/components/com.oplus.node.sstabgme.so
+odm/lib64/camera/components/com.oplus.node.sstabrealt.so
+odm/lib64/libexif-jpeg-aps.so
+odm/lib64/libapsultrahdr.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00|82b382d1cafe3979087cb14f8e9c71e2850b04e2
