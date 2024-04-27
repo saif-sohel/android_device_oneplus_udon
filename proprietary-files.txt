@@ -111,7 +111,7 @@ odm/etc/lvacfs_params/2mic/audiozoom_9.txt
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service|053c28bbe0c413ea182e2df13e05a6a0c0982e8e
 odm/etc/camera/AiFace.json|b553a74cbc298e76d8ee06f030145b0968d3c13b
-odm/etc/camera/CameraHWConfiguration.config|d408f4c9bf1df76111908b8b32e4634a2abfd25c|cbb18721484f1bd808663dd486e259ff92dc5b69
+odm/etc/camera/CameraHWConfiguration.config|9535c363496256d8eca470a63b2e2f55585117a7
 odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode|eef93e7a568ba2cd0a3b3c954f50547182ca568d
 odm/etc/camera/anc/fusion_model|adac8fcbf29c75a389f1a3cc654ec4510a32a5ff
 odm/etc/camera/anc/fusion_model_post|30450b875939bd9091e192f481ff3f0478bc48b9
@@ -139,7 +139,7 @@ odm/etc/camera/cfr_bin/CFR_ov08a10.bin|e11edfe4ffc79293e4b2da31aeaad31b7b482488
 odm/etc/camera/cfr_bin/CFR_s5k3m5.bin|32a01653b28b92d2426539f14e7e31fcab0f05d2
 odm/etc/camera/config/camera_third_party_feature_config.protobuf|d3ef413e3ce79f1c25b8d937e02c4ed01fcaa562
 odm/etc/camera/config/camera_unit_config|d1d257c9431094451c9372b9c565cdd1e020c24d
-odm/etc/camera/config/oplus_camera_algo_switch_config|ad951e90a4ccf508ba50a60aa9754f265989181b
+odm/etc/camera/config/oplus_camera_algo_switch_config|1b952b306f7f445dfe455e96f0040f685306e69d
 odm/etc/camera/config/oplus_camera_aps_config|8394135c911284c9b8f2141be4e943091d85ef7b
 odm/etc/camera/config/oplus_camera_feature_config|720bb0d51f66cfdfbd5e8a3c57a807df809d0f6b
 odm/etc/camera/config/udon_imx890|56994d470930eec9102e0c5f7ca31c2de59188d5
