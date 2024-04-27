@@ -1436,6 +1436,7 @@ odm/lib64/camera/components/com.oplus.node.sstabgme.so
 odm/lib64/camera/components/com.oplus.node.sstabrealt.so
 odm/lib64/libexif-jpeg-aps.so
 odm/lib64/libapsultrahdr.so
+odm/lib64/QNN_lib/libQnnHtp.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00|82b382d1cafe3979087cb14f8e9c71e2850b04e2
