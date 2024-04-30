@@ -1152,7 +1152,6 @@ odm/lib64/libhci_face_camera_api.so|56205177feb1ffb6ffa5d3c4c666062e8e0806e6
 odm/lib64/libhwconfigurationutil.so|6fcdafce919774abf1dcbb4c0f826ab34404f329
 odm/lib64/libhyperlapse.so|2fb1ba2c9512996409c5ffcce98c79e25da15d21
 odm/lib64/libiceainr.so|14dd7001495784feba0935c033e768ff0a74e118
-odm/lib64/libimgClarityEvaluate.so|f53afc55f881241a72fa83c818b9dec954c6e6a4
 odm/lib64/libmpbase.so|0bded0d4b202799bb5584c4a0415050a64c5abab
 odm/lib64/libnpu.so|6c4b4a8ad570594bd3ad757dacdfd31f6b633b00
 odm/lib64/libop-ai-beauty-body-detection.so|49427177cbc743fe2efd6d765e08be6b3800e721
@@ -1431,6 +1430,7 @@ odm/lib64/android.hardware.graphics.allocator@3.0.so
 odm/lib64/android.hardware.graphics.allocator@4.0.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
+odm/lib64/libimgClarityEvaluate.so|36bafc59169af1610195856e913f36e9088f425a
 odm/lib64/camera/components/com.oplus.node.sstabdefer.so
 odm/lib64/camera/components/com.oplus.node.sstabgme.so
 odm/lib64/camera/components/com.oplus.node.sstabrealt.so
