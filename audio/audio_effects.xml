@@ -42,20 +42,13 @@
         <library name="audiosphere" path="libasphere.so"/>
         <library name="shoebox" path="libshoebox.so"/>
         <library name="haptic_effect" path="libhaptic_effect.so"/>
-        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-        <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
-        <!-- DOLBY DAP -->
-        <library name="dap" path="libswdap_sp.so"/>
-        <library name="dvl" path="libdlbvol_sp.so"/>
-        <!-- DOLBY END -->
-        <!--DOLBY SPATIALIZER-->
-        <library name="spatializer" path="libswspatializer.so"/>
+         <!--DOLBY DAP-->
+        <library name="dap_sw" path="libswdap.so"/>
+        <library name="dap_hw" path="libhwdap.so"/>
         <!--DOLBY END-->
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME-->
-        <!-- Liang.Xu@MULTIMEDIA.AUDIOSERVER.EFFECT, 2021/12/01, Add for dolby atmos game -->
-        <library name="gamedap" path="libswgamedap_sp.so"/>
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME END-->
-        <!-- #endif OPLUS_FEATURE_DOLBY -->
+        <!--DOLBY VQE-->
+        <library name="vqe" path="libswvqe.so"/>
+        <!--DOLBY END-->
         <!-- OPLUS_FEATURE_SURROUND_AUDIO -->
         <library name="ozo_processing" path="libozoprocessing.so"/>
         <!-- OPLUS_FEATURE_SURROUND_AUDIO END-->
@@ -111,24 +104,15 @@
         <effect name="audiosphere" library="audiosphere" uuid="184e62ab-2d19-4364-9d1b-c0a40733866c"/>
         <effect name="shoebox" library="shoebox" uuid="1eab784c-1a36-4b2a-b7fc-e34c44cab89e"/>
         <effect name="haptic" library="haptic_effect" uuid="17852d51-161e-11e2-892e-0800200c9a66" />
-        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-        <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
-        <!-- DOLBY DAP -->
-        <effect name="dlb_music_listener" library="dvl" uuid="40f66c8b-5aa5-4345-8919-53ec431aaa98"/>
-        <effect name="dlb_ring_listener" library="dvl" uuid="21d14087-558a-4f21-94a9-5002dce64bce"/>
-        <effect name="dlb_alarm_listener" library="dvl" uuid="6aff229c-30c6-4cc8-9957-dbfe5c1bd7f6"/>
-        <effect name="dlb_system_listener" library="dvl" uuid="874db4d8-051d-4b7b-bd95-a3bebc837e9e"/>
-        <effect name="dlb_notification_listener" library="dvl" uuid="1f0091e3-6ad8-40fe-9b09-5948f9a26e7e"/>
-        <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
-        <!-- DOLBY END -->
-        <!--DOLBY SPATIALIZER-->
-        <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
+        <!--DOLBY DAP-->
+        <effectProxy name="dap" library="proxy" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa">
+            <libsw library="dap_sw" uuid="6ab06da4-c516-4611-8166-452799218539"/>
+            <libhw library="dap_hw" uuid="a0c30891-8246-4aef-b8ad-d53e26da0253"/>
+        </effectProxy>
         <!--DOLBY END-->
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME-->
-        <!-- Liang.Xu@MULTIMEDIA.AUDIOSERVER.EFFECT, 2021/12/01, Add for dolby atmos game -->
-        <effect name="gamedap" library="gamedap" uuid="3783c334-d3a0-4d13-874f-0032e5fb80e2"/>
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME END-->
-        <!-- #endif OPLUS_FEATURE_DOLBY -->
+        <!--DOLBY VQE-->
+        <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
+        <!--DOLBY END-->
         <!-- OPLUS_FEATURE_SURROUND_AUDIO -->
         <effect name="ozo" library="ozo_processing" uuid="7e384a3b-7850-4a64-a097-884250d8a737"/>
         <!-- OPLUS_FEATURE_SURROUND_AUDIO END-->
@@ -136,32 +120,6 @@
         <effect name="oplusupmix" library="opupmix" uuid="7cfe368c-b120-47d5-b795-c8abb13bd381"/>
         <!-- OPLUS_FEATURE_SPATIALIZER END -->
     </effects>
-    <postprocess>
-        <stream type="music">
-            <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-            <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
-            <apply effect="dlb_music_listener"/>
-            <!-- #endif OPLUS_FEATURE_DOLBY -->
-        </stream>
-        <stream type="ring">
-            <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-            <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
-            <apply effect="dlb_ring_listener"/>
-            <!-- #endif OPLUS_FEATURE_DOLBY -->
-        </stream>
-        <stream type="alarm">
-            <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-            <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
-            <apply effect="dlb_alarm_listener"/>
-            <!-- #endif OPLUS_FEATURE_DOLBY -->
-        </stream>
-        <stream type="notification">
-            <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-            <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
-            <apply effect="dlb_notification_listener"/>
-            <!-- #endif OPLUS_FEATURE_DOLBY -->
-        </stream>
-    </postprocess>
     <preprocess>
         <stream type="voice_communication">
             <apply effect="aec"/>
