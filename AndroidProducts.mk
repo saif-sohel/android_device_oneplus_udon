@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/radiant_udon.mk
+    $(LOCAL_DIR)/lineage_udon.mk
 
 COMMON_LUNCH_CHOICES := \
-    radiant_udon-user \
-    radiant_udon-userdebug \
-    radiant_udon-eng
+    lineage_udon-user \
+    lineage_udon-userdebug \
+    lineage_udon-eng
