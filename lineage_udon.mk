@@ -11,15 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from udon device
 $(call inherit-product, device/oneplus/udon/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common rising stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1440
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_HAS_UDFPS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 PRODUCT_NAME := lineage_udon
 PRODUCT_DEVICE := udon
-PRODUCT_MANUFACTURER := oplus
-PRODUCT_BRAND := oplus
+PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := CPH2487
-TARGET_USES_OPLUS_CAMERA := true
 
 PRODUCT_SYSTEM_NAME := CPH2487
 PRODUCT_SYSTEM_DEVICE := OP5961L1
@@ -29,6 +35,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="CPH2487-user 13 SKQ1.220905.001 R4T3.1057738-62b8-3b9 release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
+    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME) \
+    RISING_CHIPSET="SnapDragon 8+ Gen 1" \
+    RISING_MAINTAINER="Saif Sohel"
 
 BUILD_FINGERPRINT := OnePlus/CPH2487/OP5961L1:13/SKQ1.221119.001/T.R4T3.1057738-62b8-3b9:user/release-keys
