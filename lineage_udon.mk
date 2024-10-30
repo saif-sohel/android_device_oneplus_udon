@@ -16,8 +16,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_udon
 PRODUCT_DEVICE := udon
-PRODUCT_MANUFACTURER := oplus
-PRODUCT_BRAND := oplus
+PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := CPH2487
 TARGET_USES_OPLUS_CAMERA := true
 
