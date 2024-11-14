@@ -62,9 +62,6 @@
     <!-- The amount of delay to add when disabling the dimming.
          This is used to prevent flickers due to the dimming being disabled
          before the screen has had chance to switch out of HBM mode -->
-    <integer name="config_udfpsDimmingDisableDelay">2</integer>
-
-    <!-- The same as above, for enrollment in Settings -->
-    <integer name="config_udfpsEnrollingDimmingDisableDelay">5</integer>
+    <integer name="config_udfpsDimmingDisableDelay">35</integer>
 
 </resources>
