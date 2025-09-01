@@ -9,7 +9,7 @@ odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/acdb_cal.acdb
 
 # ADSP modules
-odm/lib/rfsa/adsp/aiboost/libQnnHtpV69Skel.so;SYMLINK=odm/lib/rfsa/adsp/QNN_lib/libQnnHtpV69Skel.so
+odm/lib/rfsa/adsp/aiboost/libQnnHtpV69Skel.so
 odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so
 odm/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libSnpeHtpV68Skel.so
@@ -34,25 +34,20 @@ odm/lib/rfsa/adsp/libktveq.so
 odm/lib/rfsa/adsp/libktvns.so
 odm/lib/rfsa/adsp/libktvpitchshift.so
 odm/lib/rfsa/adsp/libktvreverb.so
-odm/lib/rfsa/adsp/libktvvolume.so
-odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
+odm/lib/rfsa/adsp/libktvvolume.so;FIX_SONAME
 odm/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 odm/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so
 odm/lib/rfsa/adsp/libtfadsp_rx.so
-odm/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so
-odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so
+odm/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so;FIX_SONAME
+odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so;FIX_SONAME
 odm/lib/rfsa/adsp/libtfadsp_tx.so
 odm/lib/rfsa/adsp/libvdblurless_5.0.2_skel.so
 odm/lib/rfsa/adsp/libvdblurless_skel.so
 odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
 
-# Audio
-odm/lib64/lib_lvacfs.so
-odm/lib64/liblvacfs_wrapper.so
-vendor/lib64/hw/audio.primary.taro.so
-
 # Audio firmware
 odm/firmware/tfa98xx.cnt
+odm/lib64/libtfa98xx.so
 
 # Audio LVACFS params
 odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat
@@ -1008,7 +1003,7 @@ odm/lib64/libAncHumBokeh.so
 odm/lib64/libAncHumBokehPost.so
 odm/lib64/libAncHumVideoBase.so
 odm/lib64/libAncHumanDoubleExposure.so
-odm/lib64/libAncHumanRetain.so
+#odm/lib64/libAncHumanRetain.so
 odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegBaseSdk.so
 odm/lib64/libAncSegMultiSdk.so
@@ -1041,10 +1036,6 @@ odm/lib64/libImageWarp.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
 odm/lib64/libNamaWrapper.so
 odm/lib64/libOGLManager.so
-odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
-odm/lib64/libOPAlgoCamAiBeautyEyeRetouchCn.so
-odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
-odm/lib64/libOPAlgoCamFaceBeautyCap.so
 odm/lib64/libOPAlgoCamSinglePortrait.so
 odm/lib64/libOPLUS_SCPortrait.so;FIX_SONAME
 odm/lib64/libOplusPDCore.so
@@ -1088,6 +1079,10 @@ odm/lib64/libaisal.so
 odm/lib64/libaisd.so
 odm/lib64/libaiseg.so
 odm/lib64/libaisr.so
+odm/lib64/aiboost/libQnnHtp.so
+odm/lib64/aiboost/libQnnHtpPrepare.so
+odm/lib64/aiboost/libQnnHtpV69Stub.so
+odm/lib64/aiboost/libQnnSystem.so
 odm/lib64/libalCFR.so
 odm/lib64/libancbase_rt_bokeh.so
 odm/lib64/libancbase_rt_fusion.so;FIX_SONAME
@@ -1133,7 +1128,7 @@ odm/lib64/libarcsoft_super_night_raw.so
 odm/lib64/libarcsoft_supervideostabilization.so
 odm/lib64/libarcsoft_triple_sat.so
 odm/lib64/libarcsoft_triple_zoomtranslator.so
-odm/lib64/libarcsoft_turbo_fusion_raw_grf.so
+odm/lib64/libarcsoft_turbo_fusion_raw_grf.so;FIX_SONAME
 odm/lib64/libarcsoft_turbo_fusion_raw_portrait_super_night.so
 odm/lib64/libarcsoft_turbo_fusion_raw_super_night.so
 odm/lib64/libarcsoft_turbo_hdr_raw.so
@@ -1167,7 +1162,7 @@ odm/lib64/libpngwrapper.so
 odm/lib64/libportrait_repair_ocl.so
 odm/lib64/libportrait_repair_ppl3_ocl.so
 odm/lib64/libremosaic_wrapper.so
-odm/lib64/libremosaiclib_s5k3p9.so
+odm/lib64/libremosaiclib_s5k3p9.so;FIX_SONAME
 odm/lib64/librfapis.so
 odm/lib64/librmsclib1.so
 odm/lib64/librpmbengclient.so
@@ -1189,7 +1184,7 @@ odm/lib64/libavutil.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libwatermark_photo.so
-odm/lib64/libwrapper_te.so
+odm/lib64/libwrapper_te.so;FIX_SONAME
 odm/lib64/libyuv2.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.engcamera@1.0.so
@@ -1402,7 +1397,6 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libolc_vnd.so;SYMLINK=odm/lib64/libolc_vnd.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
 vendor/lib64/libopestriping.so
@@ -1452,6 +1446,13 @@ vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 vendor/firmware/CAMERA_ICP_480.elf
+
+# ESE
+odm/bin/hw/vendor.qti.esepowermanager@1.1-service
+odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+odm/lib64/vendor.qti.esepowermanager@1.0.so
+odm/lib64/vendor.qti.esepowermanager@1.1.so
 
 # CVP firmware
 vendor/firmware/evass-lt-21.b00
@@ -1517,9 +1518,9 @@ odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml
 odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
 vendor/lib64/android.hardware.biometrics.fingerprint-V1-ndk_platform.so
 odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00

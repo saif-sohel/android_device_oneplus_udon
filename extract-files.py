@@ -53,7 +53,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle64_open')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
-    ('odm/lib64/libarcsoft_dual_sat.so', 'odm/lib64/libarcsoft_dual_zoomtranslator.so', 'odm/lib64/libarcsoft_triple_sat.so', 'odm/lib64/libarcsoft_triple_zoomtranslator.so'): blob_fixup()
+    ('odm/lib64/libarcsoft_dual_sat.so', 'odm/lib64/libarcsoft_dual_zoomtranslator.so', 'odm/lib64/libarcsoft_triple_sat.so', 'odm/lib64/libarcsoft_triple_zoomtranslator.so', 'odm/lib64/libarc_eis.so', 'odm/lib64/camera/components/com.oplus.node.eispreview.so'): blob_fixup()
         .add_needed('libc++_shared.so'),
     'odm/lib64/libextensionlayer.so': blob_fixup()
         .replace_needed('libziparchive.so', 'libziparchive_odm.so'),
